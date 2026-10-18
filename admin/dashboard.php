@@ -96,7 +96,7 @@ function showDetail(id) {
     modal.classList.add('show');
     content.innerHTML = 'Memuat data...';
 
-    fetch('detail_transaksi.php?id=' + id)
+    fetch('detail.php?id=' + id)
         .then(res => res.text())
         .then(html => {
             content.innerHTML = html;
